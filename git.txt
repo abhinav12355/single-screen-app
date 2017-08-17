@@ -1,0 +1,98 @@
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        classlimked.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git add .
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   classlimked.cpp
+
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git commit -m "Added"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@hp.(none)')
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git config --global user.email "abhinavmahajan84@gmail.com"
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git config --global user.name "Abhinav"
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git commit -m "Added"
+[master 0eff076] Added
+ 1 file changed, 60 insertions(+)
+ create mode 100644 classlimked.cpp
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 605 bytes | 605.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/abhinav12355/single-screen-app.git
+   87e8c3e..0eff076  master -> master
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git pull
+Already up-to-date.
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$ git pull
+remote: Counting objects: 2, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/abhinav12355/single-screen-app
+   0eff076..aa34dfb  master     -> origin/master
+Updating 0eff076..aa34dfb
+Fast-forward
+ classlimked.cpp | 60 ---------------------------------------------------------
+ 1 file changed, 60 deletions(-)
+ delete mode 100644 classlimked.cpp
+
+user@hp MINGW64 ~/Desktop/abc (master)
+$
